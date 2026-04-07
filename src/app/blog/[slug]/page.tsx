@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/json-ld";
 import { blogPosts, getPostBySlug, getAllSlugs } from "@/lib/blog-posts";
+import type { BlogImage } from "@/lib/blog-posts";
 import {
   blogPostArticleSchema,
+  blogPostFaqSchema,
   blogBreadcrumbSchema,
 } from "@/lib/schema";
 
@@ -35,6 +38,14 @@ export async function generateMetadata({
       url: `${SITE_URL}/blog/${post.slug}`,
       title: post.title,
       description: post.description,
+      images: [
+        {
+          url: `${SITE_URL}${post.coverImage.src}`,
+          width: post.coverImage.width,
+          height: post.coverImage.height,
+          alt: post.coverImage.alt,
+        },
+      ],
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author],
@@ -45,11 +56,52 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [`${SITE_URL}${post.coverImage.src}`],
     },
   };
 }
 
-function renderMarkdownContent(content: string) {
+function renderInlineText(text: string): React.ReactNode[] {
+  // Handle bold, links [text](/url), and plain text
+  const parts: React.ReactNode[] = [];
+  const regex = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const token = match[0];
+    if (token.startsWith("**")) {
+      parts.push(
+        <strong key={match.index} className="text-foreground">
+          {token.slice(2, -2)}
+        </strong>
+      );
+    } else if (token.startsWith("[")) {
+      const linkMatch = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      if (linkMatch) {
+        parts.push(
+          <a
+            key={match.index}
+            href={linkMatch[2]}
+            className="text-primary underline hover:text-accent"
+          >
+            {linkMatch[1]}
+          </a>
+        );
+      }
+    }
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
+
+function renderMarkdownContent(content: string, images: BlogImage[]) {
   const lines = content.split("\n");
   const elements: React.ReactNode[] = [];
   let inTable = false;
@@ -92,6 +144,30 @@ function renderMarkdownContent(content: string) {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
+    // Image placeholder: {{IMAGE:0}}
+    const imageMatch = line.match(/^\{\{IMAGE:(\d+)\}\}$/);
+    if (imageMatch) {
+      const imgIndex = parseInt(imageMatch[1], 10);
+      const img = images[imgIndex];
+      if (img) {
+        elements.push(
+          <figure key={`img-${i}`} className="my-8">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              width={img.width}
+              height={img.height}
+              className="w-full rounded-xl border border-border/50"
+            />
+            <figcaption className="mt-2 text-center text-xs text-muted-foreground">
+              {img.alt}
+            </figcaption>
+          </figure>
+        );
+      }
+      continue;
+    }
+
     // Table detection
     if (line.startsWith("|") && line.endsWith("|")) {
       if (!inTable) {
@@ -99,7 +175,7 @@ function renderMarkdownContent(content: string) {
         tableHeaders = line.split("|").filter(Boolean);
         continue;
       }
-      if (line.includes("---")) continue; // separator
+      if (line.includes("---")) continue;
       tableRows.push(line.split("|").filter(Boolean));
       continue;
     } else if (inTable) {
@@ -111,47 +187,44 @@ function renderMarkdownContent(content: string) {
     if (line.startsWith("## ")) {
       elements.push(
         <h2 key={i} className="mt-10 mb-4 text-2xl font-bold text-foreground">
-          {line.slice(3)}
+          {renderInlineText(line.slice(3))}
         </h2>
       );
     } else if (line.startsWith("### ")) {
       elements.push(
         <h3 key={i} className="mt-8 mb-3 text-xl font-semibold text-foreground">
-          {line.slice(4)}
+          {renderInlineText(line.slice(4))}
         </h3>
+      );
+    } else if (line.match(/^\d+\.\s/)) {
+      const text = line.replace(/^\d+\.\s/, "");
+      elements.push(
+        <li key={i} className="ml-6 mb-2 list-decimal text-muted-foreground leading-relaxed">
+          {renderInlineText(text)}
+        </li>
       );
     } else if (line.startsWith("- **")) {
       const match = line.match(/^- \*\*(.+?)\*\*:?\s*(.*)/);
       if (match) {
         elements.push(
-          <li key={i} className="ml-4 mb-2 text-muted-foreground leading-relaxed">
+          <li key={i} className="ml-4 mb-2 text-muted-foreground leading-relaxed list-disc">
             <strong className="text-foreground">{match[1]}</strong>
-            {match[2] ? `: ${match[2]}` : ""}
+            {match[2] ? `: ${renderInlineText(match[2])}` : ""}
           </li>
         );
       }
     } else if (line.startsWith("- ")) {
       elements.push(
-        <li key={i} className="ml-4 mb-2 text-muted-foreground leading-relaxed">
-          {line.slice(2)}
+        <li key={i} className="ml-4 mb-2 text-muted-foreground leading-relaxed list-disc">
+          {renderInlineText(line.slice(2))}
         </li>
       );
     } else if (line.trim() === "") {
       continue;
     } else {
-      // Render bold text within paragraphs
-      const parts = line.split(/(\*\*[^*]+\*\*)/g);
       elements.push(
         <p key={i} className="mb-4 text-muted-foreground leading-relaxed">
-          {parts.map((part, pi) =>
-            part.startsWith("**") && part.endsWith("**") ? (
-              <strong key={pi} className="text-foreground">
-                {part.slice(2, -2)}
-              </strong>
-            ) : (
-              part
-            )
-          )}
+          {renderInlineText(line)}
         </p>
       );
     }
@@ -177,16 +250,17 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  // Find related posts (same category, exclude current)
-  const relatedPosts = blogPosts
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 2);
+  // Related posts from data
+  const relatedPosts = post.relatedSlugs
+    .map((s) => getPostBySlug(s))
+    .filter(Boolean);
 
   return (
     <>
       <JsonLd
         data={[
           blogPostArticleSchema(post),
+          blogPostFaqSchema(post.faqs),
           blogBreadcrumbSchema(post.title, post.slug),
         ]}
       />
@@ -219,18 +293,14 @@ export default async function BlogPostPage({
         <nav aria-label="Breadcrumb" className="mb-8 text-sm text-muted-foreground">
           <ol className="flex items-center gap-1.5">
             <li>
-              <a href="/" className="hover:text-foreground">
-                Home
-              </a>
+              <a href="/" className="hover:text-foreground">Home</a>
             </li>
             <li>/</li>
             <li>
-              <a href="/blog" className="hover:text-foreground">
-                Blog
-              </a>
+              <a href="/blog" className="hover:text-foreground">Blog</a>
             </li>
             <li>/</li>
-            <li className="text-foreground font-medium truncate max-w-[200px]">
+            <li className="text-foreground font-medium truncate max-w-[250px]">
               {post.title}
             </li>
           </ol>
@@ -243,6 +313,10 @@ export default async function BlogPostPage({
           <h1 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
             {post.title}
           </h1>
+
+          <p className="post-excerpt mt-4 text-lg text-muted-foreground leading-relaxed">
+            {post.excerpt}
+          </p>
 
           <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
             <span>Por {post.author}</span>
@@ -271,11 +345,51 @@ export default async function BlogPostPage({
             </p>
           )}
 
+          {/* Cover image */}
+          <figure className="mt-8">
+            <Image
+              src={post.coverImage.src}
+              alt={post.coverImage.alt}
+              width={post.coverImage.width}
+              height={post.coverImage.height}
+              className="w-full rounded-2xl border border-border/50"
+              priority
+            />
+          </figure>
+
           <hr className="my-8 border-border/50" />
 
+          {/* Article content with inline images */}
           <div className="prose-custom">
-            {renderMarkdownContent(post.content)}
+            {renderMarkdownContent(post.content, post.images)}
           </div>
+
+          {/* FAQ Section */}
+          {post.faqs.length > 0 && (
+            <section className="mt-16" aria-labelledby="faq-title">
+              <h2
+                id="faq-title"
+                className="text-2xl font-bold text-foreground"
+              >
+                Perguntas Frequentes
+              </h2>
+              <dl className="mt-6 space-y-4">
+                {post.faqs.map((faq) => (
+                  <div
+                    key={faq.question}
+                    className="rounded-xl border border-border bg-card/60 p-5 backdrop-blur-sm"
+                  >
+                    <dt className="font-semibold text-foreground">
+                      {faq.question}
+                    </dt>
+                    <dd className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                      {faq.answer}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
 
           {/* CTA */}
           <div className="mt-12 rounded-xl border border-primary/30 bg-primary/5 p-6 text-center">
@@ -309,26 +423,38 @@ export default async function BlogPostPage({
         {relatedPosts.length > 0 && (
           <section className="mt-16">
             <h2 className="text-2xl font-bold text-foreground">
-              Outros artigos
+              Continue lendo
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {relatedPosts.map((rp) => (
-                <a
-                  key={rp.slug}
-                  href={`/blog/${rp.slug}`}
-                  className="card-hover rounded-xl border border-border bg-card/60 p-5 backdrop-blur-sm"
-                >
-                  <p className="text-xs font-medium uppercase tracking-wide text-accent">
-                    {rp.category}
-                  </p>
-                  <h3 className="mt-2 font-semibold text-foreground leading-tight">
-                    {rp.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
-                    {rp.excerpt}
-                  </p>
-                </a>
-              ))}
+              {relatedPosts.map((rp) =>
+                rp ? (
+                  <a
+                    key={rp.slug}
+                    href={`/blog/${rp.slug}`}
+                    className="card-hover flex flex-col rounded-xl border border-border bg-card/60 p-5 backdrop-blur-sm"
+                  >
+                    <Image
+                      src={rp.coverImage.src}
+                      alt={rp.coverImage.alt}
+                      width={rp.coverImage.width}
+                      height={rp.coverImage.height}
+                      className="w-full rounded-lg border border-border/30"
+                    />
+                    <p className="mt-3 text-xs font-medium uppercase tracking-wide text-accent">
+                      {rp.category}
+                    </p>
+                    <h3 className="mt-1 font-semibold text-foreground leading-tight">
+                      {rp.title}
+                    </h3>
+                    <p className="mt-2 flex-1 text-sm text-muted-foreground line-clamp-2">
+                      {rp.excerpt}
+                    </p>
+                    <span className="mt-3 text-sm font-semibold text-primary">
+                      Ler artigo →
+                    </span>
+                  </a>
+                ) : null
+              )}
             </div>
           </section>
         )}

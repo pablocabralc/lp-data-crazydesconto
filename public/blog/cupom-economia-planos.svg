@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="50" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Economia com Cupom PABLO100</text>
+  <!-- Starter -->
+  <rect x="40" y="80" width="220" height="280" rx="12" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="150" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Starter</text>
+  <text x="150" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#8b8fa3" text-decoration="line-through">R$297/mes</text>
+  <text x="150" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#7c5cfc">R$197</text>
+  <text x="150" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">/mes</text>
+  <rect x="65" y="250" width="170" height="36" rx="8" fill="#00e88f" fill-opacity="0.15"/>
+  <text x="150" y="274" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#00e88f">-34% de desconto</text>
+  <text x="150" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#00e88f">R$1.200/ano</text>
+  <text x="150" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#8b8fa3">de economia</text>
+  <!-- Essential -->
+  <rect x="290" y="80" width="220" height="280" rx="12" fill="#0d1328" stroke="#00e88f" stroke-width="2"/>
+  <rect x="340" y="70" width="120" height="24" rx="12" fill="#00e88f"/>
+  <text x="400" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#070b18">MELHOR CUSTO</text>
+  <text x="400" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Essential</text>
+  <text x="400" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#8b8fa3" text-decoration="line-through">R$460/mes</text>
+  <text x="400" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#00e88f">R$360</text>
+  <text x="400" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">/mes</text>
+  <rect x="315" y="250" width="170" height="36" rx="8" fill="#00e88f" fill-opacity="0.15"/>
+  <text x="400" y="274" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#00e88f">-22% de desconto</text>
+  <text x="400" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#00e88f">R$1.200/ano</text>
+  <text x="400" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#8b8fa3">de economia</text>
+  <!-- Pro -->
+  <rect x="540" y="80" width="220" height="280" rx="12" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="650" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Pro</text>
+  <text x="650" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#8b8fa3" text-decoration="line-through">R$807/mes</text>
+  <text x="650" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#7c5cfc">R$707</text>
+  <text x="650" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">/mes</text>
+  <rect x="565" y="250" width="170" height="36" rx="8" fill="#00e88f" fill-opacity="0.15"/>
+  <text x="650" y="274" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#00e88f">-12% de desconto</text>
+  <text x="650" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#00e88f">R$1.200/ano</text>
+  <text x="650" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#8b8fa3">de economia</text>
+</svg>

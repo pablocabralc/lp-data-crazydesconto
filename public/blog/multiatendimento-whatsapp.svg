@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="45" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Multiatendimento DataCrazy</text>
+  <!-- Central hub -->
+  <circle cx="400" cy="200" r="50" fill="#0d1328" stroke="#00e88f" stroke-width="2"/>
+  <text x="400" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#00e88f">DataCrazy</text>
+  <text x="400" y="215" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">CRM Central</text>
+  <!-- WhatsApp -->
+  <circle cx="150" cy="120" r="40" fill="#25D366" fill-opacity="0.15" stroke="#25D366" stroke-width="1.5"/>
+  <text x="150" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24">📱</text>
+  <text x="150" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#25D366">WhatsApp</text>
+  <line x1="190" y1="140" x2="355" y2="185" stroke="#25D366" stroke-width="1" stroke-opacity="0.4"/>
+  <!-- Instagram -->
+  <circle cx="650" cy="120" r="40" fill="#E4405F" fill-opacity="0.15" stroke="#E4405F" stroke-width="1.5"/>
+  <text x="650" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24">📷</text>
+  <text x="650" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#E4405F">Instagram</text>
+  <line x1="610" y1="140" x2="445" y2="185" stroke="#E4405F" stroke-width="1" stroke-opacity="0.4"/>
+  <!-- Facebook -->
+  <circle cx="150" cy="290" r="40" fill="#1877F2" fill-opacity="0.15" stroke="#1877F2" stroke-width="1.5"/>
+  <text x="150" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24">💬</text>
+  <text x="150" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#1877F2">Facebook</text>
+  <line x1="190" y1="270" x2="355" y2="220" stroke="#1877F2" stroke-width="1" stroke-opacity="0.4"/>
+  <!-- Features -->
+  <rect x="540" y="230" width="220" height="130" rx="12" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="560" y="260" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">✓ Distribuicao inteligente</text>
+  <text x="560" y="282" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">✓ Fila e SLAs</text>
+  <text x="560" y="304" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">✓ Historico unificado</text>
+  <text x="560" y="326" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">✓ Meta Partner oficial</text>
+  <line x1="445" y1="220" x2="540" y2="270" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+</svg>

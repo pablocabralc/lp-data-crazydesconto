@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="20" fill="#070b18"/>
+  <rect x="40" y="40" width="1120" height="550" rx="16" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Title -->
+  <text x="600" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="48" font-weight="800" fill="#f0f0f0">Cupom DataCrazy</text>
+  <text x="600" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="48" font-weight="800" fill="#7c5cfc">PABLO100</text>
+  <!-- Coupon badge -->
+  <rect x="380" y="270" width="440" height="80" rx="16" fill="#7c5cfc" fill-opacity="0.15" stroke="#7c5cfc" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="600" y="322" text-anchor="middle" font-family="monospace" font-size="40" font-weight="700" fill="#7c5cfc">PABLO100</text>
+  <!-- Discount -->
+  <rect x="380" y="380" width="440" height="60" rx="12" fill="#00e88f" fill-opacity="0.15"/>
+  <text x="600" y="420" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#00e88f">R$100 OFF/mes em qualquer plano</text>
+  <!-- Plans -->
+  <text x="250" y="520" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#8b8fa3">Starter</text>
+  <text x="250" y="545" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#7c5cfc">R$197/mes</text>
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#8b8fa3">Essential</text>
+  <text x="600" y="545" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#7c5cfc">R$360/mes</text>
+  <text x="950" y="520" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#8b8fa3">Pro</text>
+  <text x="950" y="545" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#7c5cfc">R$707/mes</text>
+  <!-- Brand -->
+  <text x="600" y="605" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">CrazyDesconto — Parceiro Oficial DataCrazy</text>
+</svg>

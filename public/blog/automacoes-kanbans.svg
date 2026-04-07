@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="40" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Automacoes e Kanbans Avancados</text>
+  <!-- Kanban board -->
+  <rect x="30" y="60" width="740" height="310" rx="12" fill="#0d1328" stroke="#1e2440" stroke-width="1"/>
+  <!-- Column 1 -->
+  <rect x="50" y="80" width="160" height="270" rx="8" fill="#1e2440"/>
+  <text x="130" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#7c5cfc">Novos Leads</text>
+  <rect x="60" y="118" width="140" height="50" rx="6" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="70" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Maria S.</text>
+  <text x="70" y="158" font-family="system-ui,sans-serif" font-size="9" fill="#00e88f">Score: 85 — Quente</text>
+  <rect x="60" y="176" width="140" height="50" rx="6" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="70" y="198" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Carlos R.</text>
+  <text x="70" y="216" font-family="system-ui,sans-serif" font-size="9" fill="#8b8fa3">Score: 42 — Morno</text>
+  <rect x="60" y="234" width="140" height="50" rx="6" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="70" y="256" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Ana L.</text>
+  <text x="70" y="274" font-family="system-ui,sans-serif" font-size="9" fill="#00e88f">Score: 92 — Quente</text>
+  <!-- Column 2 -->
+  <rect x="230" y="80" width="160" height="270" rx="8" fill="#1e2440"/>
+  <text x="310" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#00e88f">Qualificacao</text>
+  <rect x="240" y="118" width="140" height="50" rx="6" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="250" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Pedro M.</text>
+  <text x="250" y="158" font-family="system-ui,sans-serif" font-size="9" fill="#7c5cfc">IA: intencao alta</text>
+  <rect x="240" y="176" width="140" height="50" rx="6" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="250" y="198" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Julia F.</text>
+  <text x="250" y="216" font-family="system-ui,sans-serif" font-size="9" fill="#7c5cfc">IA: sentimento positivo</text>
+  <!-- Column 3 -->
+  <rect x="410" y="80" width="160" height="270" rx="8" fill="#1e2440"/>
+  <text x="490" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#7c5cfc">Proposta</text>
+  <rect x="420" y="118" width="140" height="50" rx="6" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="430" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Tech Corp</text>
+  <text x="430" y="158" font-family="system-ui,sans-serif" font-size="9" fill="#00e88f">R$12.000 — Essential</text>
+  <!-- Column 4 -->
+  <rect x="590" y="80" width="160" height="270" rx="8" fill="#1e2440"/>
+  <text x="670" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#00e88f">Fechamento</text>
+  <rect x="600" y="118" width="140" height="50" rx="6" fill="#0d1328" stroke="#00e88f" stroke-width="2"/>
+  <text x="610" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#f0f0f0">Loja XYZ</text>
+  <text x="610" y="158" font-family="system-ui,sans-serif" font-size="9" fill="#00e88f">R$8.400 — Pro ✓</text>
+  <!-- Automation arrow -->
+  <path d="M130 310 Q 400 370 670 310" stroke="#7c5cfc" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <text x="400" y="360" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#7c5cfc">Automacao: movimentacao inteligente por score e IA</text>
+</svg>

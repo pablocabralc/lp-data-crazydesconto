@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <!-- Checkout window -->
+  <rect x="150" y="30" width="500" height="340" rx="12" fill="#0d1328" stroke="#1e2440" stroke-width="1"/>
+  <rect x="150" y="30" width="500" height="40" rx="12" fill="#1e2440"/>
+  <circle cx="175" cy="50" r="6" fill="#ff5f57"/>
+  <circle cx="195" cy="50" r="6" fill="#febc2e"/>
+  <circle cx="215" cy="50" r="6" fill="#28c840"/>
+  <text x="400" y="55" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Checkout DataCrazy</text>
+  <!-- Order summary -->
+  <text x="200" y="105" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#f0f0f0">Resumo do Pedido</text>
+  <text x="200" y="140" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Plano Essential - Mensal</text>
+  <text x="580" y="140" text-anchor="end" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3" text-decoration="line-through">R$460,00</text>
+  <!-- Coupon field -->
+  <text x="200" y="185" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#8b8fa3">Cupom de desconto</text>
+  <rect x="200" y="195" width="280" height="44" rx="8" fill="#1e2440" stroke="#7c5cfc" stroke-width="2"/>
+  <text x="220" y="222" font-family="monospace" font-size="18" font-weight="700" fill="#7c5cfc">PABLO100</text>
+  <rect x="500" y="195" width="90" height="44" rx="8" fill="#7c5cfc"/>
+  <text x="545" y="222" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff">Aplicar</text>
+  <!-- Discount applied -->
+  <rect x="200" y="260" width="390" height="40" rx="8" fill="#00e88f" fill-opacity="0.1" stroke="#00e88f" stroke-width="1"/>
+  <text x="220" y="285" font-family="system-ui,sans-serif" font-size="14" fill="#00e88f">Cupom PABLO100 aplicado</text>
+  <text x="570" y="285" text-anchor="end" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#00e88f">-R$100,00</text>
+  <!-- Total -->
+  <line x1="200" y1="320" x2="590" y2="320" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="348" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#f0f0f0">Total</text>
+  <text x="580" y="348" text-anchor="end" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="#7c5cfc">R$360,00/mes</text>
+</svg>

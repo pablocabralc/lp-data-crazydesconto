@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="45" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Diferenciais do DataCrazy</text>
+  <!-- Grid -->
+  <rect x="40" y="75" width="350" height="130" rx="12" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="60" y="110" font-family="system-ui,sans-serif" font-size="24" fill="#7c5cfc">🤖</text>
+  <text x="95" y="110" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Crazy IA integrada</text>
+  <text x="95" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Intencao de compra, sentimento</text>
+  <text x="95" y="155" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">e priorizacao automatica de leads</text>
+  <rect x="410" y="75" width="350" height="130" rx="12" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="430" y="110" font-family="system-ui,sans-serif" font-size="24" fill="#00e88f">📊</text>
+  <text x="465" y="110" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">BI nativo com metricas</text>
+  <text x="465" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">LTV, CAC, conversao por origem</text>
+  <text x="465" y="155" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">e tempo por etapa em tempo real</text>
+  <rect x="40" y="225" width="350" height="130" rx="12" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="60" y="260" font-family="system-ui,sans-serif" font-size="24" fill="#00e88f">💬</text>
+  <text x="95" y="260" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Multiatendimento nativo</text>
+  <text x="95" y="285" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">WhatsApp, Instagram, Facebook</text>
+  <text x="95" y="305" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Meta Business Partner oficial</text>
+  <rect x="410" y="225" width="350" height="130" rx="12" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="430" y="260" font-family="system-ui,sans-serif" font-size="24" fill="#7c5cfc">⚡</text>
+  <text x="465" y="260" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Automacoes inteligentes</text>
+  <text x="465" y="285" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Regras de negocio complexas,</text>
+  <text x="465" y="305" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">agentes de IA e webhooks</text>
+</svg>

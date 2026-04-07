@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="45" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Fluxo de Migracao para DataCrazy</text>
+  <!-- Steps -->
+  <rect x="40" y="85" width="130" height="100" rx="10" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="105" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#7c5cfc">1. Exportar</text>
+  <text x="105" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">leads e dados</text>
+  <text x="105" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">do CRM atual</text>
+  <path d="M175 135 L205 135" stroke="#7c5cfc" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <polygon points="205,130 215,135 205,140" fill="#7c5cfc"/>
+  <rect x="220" y="85" width="130" height="100" rx="10" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="285" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#7c5cfc">2. Importar</text>
+  <text x="285" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">para DataCrazy</text>
+  <text x="285" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">via CSV ou API</text>
+  <path d="M355 135 L385 135" stroke="#7c5cfc" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <polygon points="385,130 395,135 385,140" fill="#7c5cfc"/>
+  <rect x="400" y="85" width="130" height="100" rx="10" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="465" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#00e88f">3. Configurar</text>
+  <text x="465" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">pipelines e</text>
+  <text x="465" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">automacoes</text>
+  <path d="M535 135 L565 135" stroke="#00e88f" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <polygon points="565,130 575,135 565,140" fill="#00e88f"/>
+  <rect x="580" y="85" width="130" height="100" rx="10" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="645" y="125" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#00e88f">4. Ativar</text>
+  <text x="645" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">multiatendimento</text>
+  <text x="645" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">e IA</text>
+  <!-- Timeline -->
+  <rect x="150" y="230" width="500" height="8" rx="4" fill="#1e2440"/>
+  <rect x="150" y="230" width="500" height="8" rx="4" fill="url(#grad1)"/>
+  <defs><linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7c5cfc"/><stop offset="100%" stop-color="#00e88f"/></linearGradient></defs>
+  <text x="400" y="270" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Tempo medio de migracao: 1-5 dias uteis</text>
+  <!-- Support -->
+  <rect x="150" y="300" width="500" height="70" rx="12" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="400" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Suporte dedicado durante toda a migracao</text>
+  <text x="400" y="355" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Chat 9h-22h | Meet seg-sex 10h-18h | SLA 5 minutos</text>
+</svg>

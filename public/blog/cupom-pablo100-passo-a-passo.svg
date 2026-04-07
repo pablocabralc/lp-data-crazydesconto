@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="50" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">3 Passos para Usar o Cupom PABLO100</text>
+  <!-- Step 1 -->
+  <circle cx="140" cy="180" r="40" fill="#7c5cfc" fill-opacity="0.2" stroke="#7c5cfc" stroke-width="2"/>
+  <text x="140" y="192" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#7c5cfc">1</text>
+  <text x="140" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Acesse o link</text>
+  <text x="140" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#8b8fa3">datacrazy.io/?via=IAPABLO</text>
+  <!-- Arrow -->
+  <path d="M220 180 L340 180" stroke="#7c5cfc" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="340,172 356,180 340,188" fill="#7c5cfc"/>
+  <!-- Step 2 -->
+  <circle cx="400" cy="180" r="40" fill="#00e88f" fill-opacity="0.2" stroke="#00e88f" stroke-width="2"/>
+  <text x="400" y="192" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#00e88f">2</text>
+  <text x="400" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Crie sua conta</text>
+  <text x="400" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#8b8fa3">Escolha seu plano ideal</text>
+  <!-- Arrow -->
+  <path d="M480 180 L600 180" stroke="#00e88f" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="600,172 616,180 600,188" fill="#00e88f"/>
+  <!-- Step 3 -->
+  <circle cx="660" cy="180" r="40" fill="#7c5cfc" fill-opacity="0.2" stroke="#7c5cfc" stroke-width="2"/>
+  <text x="660" y="192" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#7c5cfc">3</text>
+  <text x="660" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Aplique o cupom</text>
+  <text x="660" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#8b8fa3">PABLO100 no checkout</text>
+  <!-- Result -->
+  <rect x="200" y="310" width="400" height="60" rx="12" fill="#00e88f" fill-opacity="0.1" stroke="#00e88f" stroke-width="1"/>
+  <text x="400" y="348" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#00e88f">R$100 de desconto todo mes!</text>
+</svg>

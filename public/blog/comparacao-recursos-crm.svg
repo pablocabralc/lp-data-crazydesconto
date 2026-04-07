@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="40" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Comparacao de Recursos</text>
+  <!-- Header -->
+  <rect x="40" y="60" width="720" height="40" rx="8" fill="#1e2440"/>
+  <text x="200" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#8b8fa3">Recurso</text>
+  <text x="460" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#ff5f57">CRM Tradicional</text>
+  <text x="660" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#00e88f">DataCrazy</text>
+  <!-- Rows -->
+  <text x="200" y="130" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f0f0f0">IA integrada</text>
+  <text x="460" y="130" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#ff5f57">✗</text>
+  <text x="660" y="130" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#00e88f">✓</text>
+  <line x1="60" y1="145" x2="740" y2="145" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f0f0f0">BI nativo</text>
+  <text x="460" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#ff5f57">✗</text>
+  <text x="660" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#00e88f">✓</text>
+  <line x1="60" y1="185" x2="740" y2="185" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f0f0f0">Multiatendimento</text>
+  <text x="460" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#ff5f57">Plugin pago</text>
+  <text x="660" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">Nativo</text>
+  <line x1="60" y1="225" x2="740" y2="225" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f0f0f0">Automacoes</text>
+  <text x="460" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#ff5f57">Basicas</text>
+  <text x="660" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">Inteligentes</text>
+  <line x1="60" y1="265" x2="740" y2="265" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f0f0f0">Agentes de IA</text>
+  <text x="460" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#ff5f57">✗</text>
+  <text x="660" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#00e88f">✓</text>
+  <line x1="60" y1="305" x2="740" y2="305" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f0f0f0">Ferramentas necessarias</text>
+  <text x="460" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#ff5f57">3-6 ferramentas</text>
+  <text x="660" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#00e88f">1 plataforma</text>
+  <line x1="60" y1="345" x2="740" y2="345" stroke="#1e2440" stroke-width="1"/>
+  <text x="200" y="375" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#f0f0f0">Custo mensal</text>
+  <text x="460" y="375" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#ff5f57">R$800-1500</text>
+  <text x="660" y="375" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#00e88f">R$197+</text>
+</svg>

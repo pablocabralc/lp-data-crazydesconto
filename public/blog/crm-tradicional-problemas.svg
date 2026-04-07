@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="45" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Problemas dos CRMs Tradicionais</text>
+  <!-- Grid of problems -->
+  <rect x="40" y="75" width="350" height="130" rx="12" fill="#0d1328" stroke="#ff5f57" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="60" y="110" font-family="system-ui,sans-serif" font-size="24" fill="#ff5f57">✗</text>
+  <text x="90" y="110" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Sem IA nativa</text>
+  <text x="90" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Ferramentas separadas para analise</text>
+  <text x="90" y="155" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">de dados e predicoes de vendas</text>
+  <rect x="410" y="75" width="350" height="130" rx="12" fill="#0d1328" stroke="#ff5f57" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="430" y="110" font-family="system-ui,sans-serif" font-size="24" fill="#ff5f57">✗</text>
+  <text x="460" y="110" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Multiatendimento limitado</text>
+  <text x="460" y="135" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">WhatsApp e Instagram exigem</text>
+  <text x="460" y="155" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">plugins pagos de terceiros</text>
+  <rect x="40" y="225" width="350" height="130" rx="12" fill="#0d1328" stroke="#ff5f57" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="60" y="260" font-family="system-ui,sans-serif" font-size="24" fill="#ff5f57">✗</text>
+  <text x="90" y="260" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">BI externo necessario</text>
+  <text x="90" y="285" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">LTV, CAC e conversao exigem</text>
+  <text x="90" y="305" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Power BI, Metabase ou planilhas</text>
+  <rect x="410" y="225" width="350" height="130" rx="12" fill="#0d1328" stroke="#ff5f57" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="430" y="260" font-family="system-ui,sans-serif" font-size="24" fill="#ff5f57">✗</text>
+  <text x="460" y="260" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f0f0f0">Automacoes basicas</text>
+  <text x="460" y="285" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">Regras simples que nao consideram</text>
+  <text x="460" y="305" font-family="system-ui,sans-serif" font-size="13" fill="#8b8fa3">comportamento real do lead</text>
+</svg>

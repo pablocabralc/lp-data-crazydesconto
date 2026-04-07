@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#070b18"/>
+  <text x="400" y="45" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f0f0">Crazy IA — Funcionalidades</text>
+  <!-- Central brain icon -->
+  <circle cx="400" cy="200" r="60" fill="#7c5cfc" fill-opacity="0.15" stroke="#7c5cfc" stroke-width="2"/>
+  <text x="400" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="40">🧠</text>
+  <!-- Feature 1 -->
+  <line x1="350" y1="160" x2="180" y2="100" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="50" y="75" width="180" height="55" rx="10" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="140" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#7c5cfc">Intencao de compra</text>
+  <text x="140" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">Score automatico de leads</text>
+  <!-- Feature 2 -->
+  <line x1="450" y1="160" x2="620" y2="100" stroke="#00e88f" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="530" y="75" width="180" height="55" rx="10" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="620" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#00e88f">Analise de sentimento</text>
+  <text x="620" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">Tom das conversas em tempo real</text>
+  <!-- Feature 3 -->
+  <line x1="350" y1="240" x2="180" y2="310" stroke="#00e88f" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="50" y="285" width="180" height="55" rx="10" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="140" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#00e88f">Agentes de IA</text>
+  <text x="140" y="328" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">Automacao de pipeline</text>
+  <!-- Feature 4 -->
+  <line x1="450" y1="240" x2="620" y2="310" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="530" y="285" width="180" height="55" rx="10" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="620" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#7c5cfc">Dados em tempo real</text>
+  <text x="620" y="328" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8b8fa3">Decisoes baseadas em dados</text>
+</svg>

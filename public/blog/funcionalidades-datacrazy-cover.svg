@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="20" fill="#070b18"/>
+  <text x="600" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="42" font-weight="800" fill="#f0f0f0">Todas as Funcionalidades</text>
+  <text x="600" y="130" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#7c5cfc">DataCrazy CRM com IA</text>
+  <!-- Feature blocks -->
+  <rect x="80" y="180" width="320" height="140" rx="16" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="100" y="220" font-family="system-ui,sans-serif" font-size="28">🤖</text>
+  <text x="140" y="220" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Crazy IA</text>
+  <text x="100" y="250" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Intencao de compra, sentimento</text>
+  <text x="100" y="270" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">e agentes inteligentes</text>
+  <rect x="440" y="180" width="320" height="140" rx="16" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="460" y="220" font-family="system-ui,sans-serif" font-size="28">💬</text>
+  <text x="500" y="220" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Multiatendimento</text>
+  <text x="460" y="250" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">WhatsApp, Instagram, Facebook</text>
+  <text x="460" y="270" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Meta Business Partner</text>
+  <rect x="800" y="180" width="320" height="140" rx="16" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="820" y="220" font-family="system-ui,sans-serif" font-size="28">📊</text>
+  <text x="860" y="220" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">BI Interno</text>
+  <text x="820" y="250" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">LTV, CAC, conversao, funil</text>
+  <text x="820" y="270" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Dashboards em tempo real</text>
+  <rect x="80" y="350" width="320" height="140" rx="16" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="100" y="390" font-family="system-ui,sans-serif" font-size="28">⚡</text>
+  <text x="140" y="390" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Automacoes</text>
+  <text x="100" y="420" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Regras de negocio, webhooks</text>
+  <text x="100" y="440" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">e fluxos inteligentes</text>
+  <rect x="440" y="350" width="320" height="140" rx="16" fill="#0d1328" stroke="#7c5cfc" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="460" y="390" font-family="system-ui,sans-serif" font-size="28">📋</text>
+  <text x="500" y="390" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">Kanbans</text>
+  <text x="460" y="420" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Pipelines customizaveis</text>
+  <text x="460" y="440" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Ate 25 etapas no Pro</text>
+  <rect x="800" y="350" width="320" height="140" rx="16" fill="#0d1328" stroke="#00e88f" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="820" y="390" font-family="system-ui,sans-serif" font-size="28">🔗</text>
+  <text x="860" y="390" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f0f0f0">API e Integracoes</text>
+  <text x="820" y="420" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">API REST + Webhooks</text>
+  <text x="820" y="440" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">Conecte qualquer ferramenta</text>
+  <!-- Brand -->
+  <text x="600" y="545" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#7c5cfc">Cupom PABLO100 = R$100 OFF/mes</text>
+  <text x="600" y="580" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#8b8fa3">CrazyDesconto — Parceiro Oficial DataCrazy</text>
+</svg>

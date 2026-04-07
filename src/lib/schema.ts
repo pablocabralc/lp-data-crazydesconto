@@ -13,7 +13,7 @@ import type {
   Blog,
   CollectionPage,
 } from "schema-dts";
-import type { BlogPost } from "./blog-posts";
+import type { BlogPost, BlogFaq } from "./blog-posts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://descontodatacrazy.com.br";
 const SITE_NAME = "CrazyDesconto — Parceiro Oficial DataCrazy";
@@ -588,6 +588,12 @@ export function blogPostArticleSchema(post: BlogPost): WithContext<Article> {
     headline: post.title,
     description: post.description,
     url: `${SITE_URL}/blog/${post.slug}`,
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}${post.coverImage.src}`,
+      width: String(post.coverImage.width),
+      height: String(post.coverImage.height),
+    },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     author: {
@@ -612,6 +618,25 @@ export function blogPostArticleSchema(post: BlogPost): WithContext<Article> {
     keywords: post.tags.join(", "),
     articleSection: post.category,
     wordCount: post.content.split(/\s+/).length,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".post-excerpt"],
+    },
+  };
+}
+
+export function blogPostFaqSchema(faqs: BlogFaq[]): WithContext<FAQPage> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question" as const,
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer" as const,
+        text: faq.answer,
+      },
+    })),
   };
 }
 
