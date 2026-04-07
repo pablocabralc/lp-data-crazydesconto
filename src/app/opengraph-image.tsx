@@ -33,7 +33,20 @@ export default function OgImage() {
             width: "600px",
             height: "400px",
             background:
-              "radial-gradient(ellipse, rgba(124,92,252,0.2) 0%, transparent 70%)",
+              "radial-gradient(ellipse, rgba(255,23,68,0.2) 0%, transparent 70%)",
+            display: "flex",
+          }}
+        />
+
+        {/* Top accent line */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "4px",
+            background: "linear-gradient(90deg, #ff1744, #d50000, #ff1744)",
             display: "flex",
           }}
         />
@@ -43,25 +56,15 @@ export default function OgImage() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "8px",
-            background: "rgba(124,92,252,0.15)",
-            border: "1px solid rgba(124,92,252,0.3)",
-            borderRadius: "999px",
-            padding: "8px 20px",
+            justifyContent: "center",
+            background: "linear-gradient(135deg, #ff1744, #d50000)",
+            borderRadius: "16px",
+            padding: "10px 28px",
             marginBottom: "24px",
           }}
         >
-          <div
-            style={{
-              width: "8px",
-              height: "8px",
-              borderRadius: "50%",
-              background: "#7c5cfc",
-              display: "flex",
-            }}
-          />
-          <span style={{ color: "#7c5cfc", fontSize: "18px", fontWeight: 600 }}>
-            Parceiro Oficial DataCrazy
+          <span style={{ color: "white", fontSize: "22px", fontWeight: 900, letterSpacing: "2px" }}>
+            PARCEIRO OFICIAL
           </span>
         </div>
 
@@ -78,7 +81,7 @@ export default function OgImage() {
             alignItems: "center",
           }}
         >
-          <span style={{ color: "#00e88f" }}>Desconto DataCrazy</span>
+          <span style={{ color: "#6366f1" }}>Desconto DataCrazy</span>
           <span style={{ color: "#e8eaf0", marginTop: "4px" }}>
             R$100 OFF/mês no CRM com IA
           </span>
@@ -102,7 +105,7 @@ export default function OgImage() {
               padding: "10px 24px",
               fontSize: "28px",
               fontWeight: 700,
-              color: "#00e88f",
+              color: "#6366f1",
               fontFamily: "monospace",
             }}
           >
@@ -118,7 +121,7 @@ export default function OgImage() {
               padding: "10px 24px",
               fontSize: "28px",
               fontWeight: 700,
-              color: "#00e88f",
+              color: "#6366f1",
               fontFamily: "monospace",
             }}
           >
@@ -164,7 +167,7 @@ export default function OgImage() {
             color: "#8892a8",
           }}
         >
-          <span style={{ color: "#00e88f", fontWeight: 700 }}>Crazy</span>
+          <span style={{ color: "#6366f1", fontWeight: 700 }}>Crazy</span>
           <span style={{ fontWeight: 700, color: "#e8eaf0" }}>Desconto</span>
           <span>— crazydesconto.com.br</span>
         </div>

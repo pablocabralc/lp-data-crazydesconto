@@ -14,10 +14,10 @@
   <text x="300" y="105" font-family="system-ui" font-size="24" fill="#7c5cfc" text-anchor="middle">→</text>
 
   <!-- Right: DataCrazy (green/highlighted) -->
-  <rect x="330" y="30" width="240" height="140" rx="12" fill="#151520" stroke="#00e88f" stroke-width="2"/>
-  <text x="450" y="60" font-family="system-ui" font-size="14" font-weight="bold" fill="#00e88f" text-anchor="middle">Datacrazy</text>
+  <rect x="330" y="30" width="240" height="140" rx="12" fill="#151520" stroke="#6366f1" stroke-width="2"/>
+  <text x="450" y="60" font-family="system-ui" font-size="14" font-weight="bold" fill="#6366f1" text-anchor="middle">Datacrazy</text>
   <text x="450" y="85" font-family="system-ui" font-size="11" fill="#e8eaf0" text-anchor="middle">Tudo em 1 plataforma</text>
   <text x="450" y="105" font-family="system-ui" font-size="11" fill="#e8eaf0" text-anchor="middle">IA + Automação + BI</text>
   <text x="450" y="125" font-family="system-ui" font-size="11" fill="#e8eaf0" text-anchor="middle">WhatsApp + Instagram</text>
-  <text x="450" y="145" font-family="system-ui" font-size="11" fill="#00e88f" text-anchor="middle">Com desconto PABLO100</text>
+  <text x="450" y="145" font-family="system-ui" font-size="11" fill="#6366f1" text-anchor="middle">Com desconto PABLO100</text>
 </svg>

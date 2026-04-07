@@ -11,13 +11,13 @@
   <rect x="56" y="180" width="24" height="40" rx="4" fill="#7c5cfc" opacity="0.4"/>
   <rect x="88" y="160" width="24" height="60" rx="4" fill="#7c5cfc" opacity="0.6"/>
   <rect x="120" y="140" width="24" height="80" rx="4" fill="#7c5cfc" opacity="0.8"/>
-  <rect x="152" y="120" width="24" height="100" rx="4" fill="#00e88f" opacity="0.9"/>
-  <rect x="184" y="100" width="24" height="120" rx="4" fill="#00e88f"/>
+  <rect x="152" y="120" width="24" height="100" rx="4" fill="#6366f1" opacity="0.9"/>
+  <rect x="184" y="100" width="24" height="120" rx="4" fill="#6366f1"/>
 
   <!-- Stats cards -->
   <rect x="240" y="100" width="120" height="60" rx="8" fill="#1a2040"/>
   <text x="260" y="125" font-family="system-ui" font-size="11" fill="#8892a8">LTV Médio</text>
-  <text x="260" y="148" font-family="system-ui" font-size="18" font-weight="bold" fill="#00e88f">R$4.200</text>
+  <text x="260" y="148" font-family="system-ui" font-size="18" font-weight="bold" fill="#6366f1">R$4.200</text>
 
   <rect x="240" y="170" width="120" height="60" rx="8" fill="#1a2040"/>
   <text x="260" y="195" font-family="system-ui" font-size="11" fill="#8892a8">Conversão</text>
@@ -25,7 +25,7 @@
 
   <!-- WhatsApp/Chat mockup -->
   <rect x="420" y="40" width="340" height="200" rx="12" fill="#151520" stroke="#1a2040" stroke-width="1"/>
-  <rect x="436" y="60" width="80" height="8" rx="4" fill="#00e88f" opacity="0.6"/>
+  <rect x="436" y="60" width="80" height="8" rx="4" fill="#6366f1" opacity="0.6"/>
   <rect x="436" y="76" width="60" height="6" rx="3" fill="#8892a8" opacity="0.3"/>
 
   <!-- Chat bubbles -->
@@ -35,18 +35,18 @@
   <rect x="520" y="140" width="220" height="30" rx="10" fill="#7c5cfc" opacity="0.2"/>
   <text x="536" y="160" font-family="system-ui" font-size="11" fill="#7c5cfc">IA: Detectei interesse de compra</text>
 
-  <rect x="520" y="180" width="180" height="30" rx="10" fill="#00e88f" opacity="0.15"/>
-  <text x="536" y="200" font-family="system-ui" font-size="11" fill="#00e88f">Lead movido para Negociação</text>
+  <rect x="520" y="180" width="180" height="30" rx="10" fill="#6366f1" opacity="0.15"/>
+  <text x="536" y="200" font-family="system-ui" font-size="11" fill="#6366f1">Lead movido para Negociação</text>
 
   <!-- Coupon badge -->
-  <rect x="200" y="280" width="400" height="80" rx="16" fill="#00e88f" opacity="0.08" stroke="#00e88f" stroke-width="2" stroke-dasharray="8 4"/>
-  <text x="400" y="315" font-family="monospace" font-size="28" font-weight="bold" fill="#00e88f" text-anchor="middle">PABLO100</text>
+  <rect x="200" y="280" width="400" height="80" rx="16" fill="#6366f1" opacity="0.08" stroke="#6366f1" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="400" y="315" font-family="monospace" font-size="28" font-weight="bold" fill="#6366f1" text-anchor="middle">PABLO100</text>
   <text x="400" y="345" font-family="system-ui" font-size="14" fill="#8892a8" text-anchor="middle">R$100 de desconto por mês em qualquer plano</text>
 
   <defs>
     <linearGradient id="border-gradient" x1="0" y1="0" x2="800" y2="400">
       <stop offset="0%" stop-color="#7c5cfc" stop-opacity="0.3"/>
-      <stop offset="50%" stop-color="#00e88f" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#7c5cfc" stop-opacity="0.3"/>
     </linearGradient>
   </defs>

@@ -82,20 +82,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: "Cupom DataCrazy PABLO100 — R$100 OFF/mês no CRM com IA",
     description: DESCRIPTION,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Cupom DataCrazy PABLO100 — R$100 de desconto por mês no CRM com IA. Parceiro oficial.",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cupom DataCrazy PABLO100 — R$100 OFF/mês no CRM com IA",
     description: DESCRIPTION,
-    images: ["/og-image.png"],
   },
   alternates: {
     canonical: SITE_URL,
@@ -123,9 +114,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <JsonLd
           data={[
             organizationSchema(),
