@@ -10,7 +10,10 @@ import type {
   HowTo,
   ItemList,
   Article,
+  Blog,
+  CollectionPage,
 } from "schema-dts";
+import type { BlogPost } from "./blog-posts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://descontodatacrazy.com.br";
 const SITE_NAME = "CrazyDesconto — Parceiro Oficial DataCrazy";
@@ -506,6 +509,109 @@ export function articleSchema(): WithContext<Article> {
     },
     inLanguage: "pt-BR",
     keywords: "DataCrazy, CRM com IA, automação de vendas, multiatendimento WhatsApp, BI interno",
+  };
+}
+
+export function blogSchema(): WithContext<Blog> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Blog CrazyDesconto — Dicas, Cupons e Guias DataCrazy",
+    url: `${SITE_URL}/blog`,
+    description:
+      "Dicas, guias e comparativos sobre DataCrazy CRM. Cupons de desconto, funcionalidades, automações e tudo sobre o CRM com IA.",
+    publisher: {
+      "@type": "Organization",
+      name: "CrazyDesconto",
+      url: SITE_URL,
+    },
+    inLanguage: "pt-BR",
+  };
+}
+
+export function blogCollectionSchema(posts: BlogPost[]): WithContext<CollectionPage> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Blog CrazyDesconto",
+    url: `${SITE_URL}/blog`,
+    description: "Todos os artigos do blog CrazyDesconto sobre DataCrazy CRM.",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: posts.length,
+      itemListElement: posts.map((post, index) => ({
+        "@type": "ListItem" as const,
+        position: index + 1,
+        name: post.title,
+        url: `${SITE_URL}/blog/${post.slug}`,
+      })),
+    },
+  };
+}
+
+export function blogBreadcrumbSchema(postTitle?: string, postSlug?: string): WithContext<BreadcrumbList> {
+  const items: Array<{ "@type": "ListItem"; position: number; name: string; item: string }> = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "CrazyDesconto",
+      item: SITE_URL,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+      item: `${SITE_URL}/blog`,
+    },
+  ];
+
+  if (postTitle && postSlug) {
+    items.push({
+      "@type": "ListItem",
+      position: 3,
+      name: postTitle,
+      item: `${SITE_URL}/blog/${postSlug}`,
+    });
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items,
+  };
+}
+
+export function blogPostArticleSchema(post: BlogPost): WithContext<Article> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    author: {
+      "@type": "Organization",
+      name: "CrazyDesconto",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "CrazyDesconto",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${post.slug}`,
+    },
+    inLanguage: "pt-BR",
+    keywords: post.tags.join(", "),
+    articleSection: post.category,
+    wordCount: post.content.split(/\s+/).length,
   };
 }
 

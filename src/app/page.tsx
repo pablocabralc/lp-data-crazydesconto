@@ -322,6 +322,7 @@ export default function Home() {
             <span className="text-primary">Crazy</span>Desconto
           </span>
           <div className="flex items-center gap-3">
+            <a href="/blog" className="text-sm font-medium text-accent hover:text-foreground">Blog</a>
             <CtaButton size="sm" variant="secondary">Agendar Demo</CtaButton>
             <CtaButton size="sm">Usar Cupom →</CtaButton>
           </div>
@@ -881,6 +882,11 @@ export default function Home() {
             <div>
               <p className="font-semibold text-foreground">Sobre a DataCrazy</p>
               <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <a href="/blog" className="underline hover:text-foreground">
+                    Blog — Dicas e Guias
+                  </a>
+                </li>
                 <li>
                   <a href="/sobre-datacrazy" className="underline hover:text-foreground">
                     O que é a DataCrazy?

@@ -29,13 +29,16 @@ export default function SobreDataCrazy() {
           <a href="/" className="text-lg font-bold tracking-tight">
             <span className="text-primary">Crazy</span>Desconto
           </a>
-          <a
-            href="https://datacrazy.io/?via=IAPABLO"
-            rel="noopener noreferrer sponsored"
-            className="glow-primary inline-flex items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-all hover:brightness-110 hover:scale-[1.02]"
-          >
-            Usar Cupom PABLO100 →
-          </a>
+          <div className="flex items-center gap-3">
+            <a href="/blog" className="text-sm font-medium text-accent hover:text-foreground">Blog</a>
+            <a
+              href="https://datacrazy.io/?via=IAPABLO"
+              rel="noopener noreferrer sponsored"
+              className="glow-primary inline-flex items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-all hover:brightness-110 hover:scale-[1.02]"
+            >
+              Usar Cupom PABLO100 →
+            </a>
+          </div>
         </nav>
       </header>
 
@@ -190,6 +193,8 @@ export default function SobreDataCrazy() {
       <footer className="mt-auto border-t border-border/50 py-8 text-center text-sm text-muted-foreground">
         <p>
           <a href="/" className="underline hover:text-foreground">← Voltar para CrazyDesconto</a>
+          {" | "}
+          <a href="/blog" className="underline hover:text-foreground">Blog</a>
         </p>
         <p className="mt-2">
           CrazyDesconto é parceiro oficial da DataCrazy. Esta página contém links de afiliado.
