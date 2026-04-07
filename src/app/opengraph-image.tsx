@@ -169,7 +169,7 @@ export default function OgImage() {
         >
           <span style={{ color: "#6366f1", fontWeight: 700 }}>Crazy</span>
           <span style={{ fontWeight: 700, color: "#e8eaf0" }}>Desconto</span>
-          <span>— crazydesconto.com.br</span>
+          <span>— descontodatacrazy.com.br</span>
         </div>
       </div>
     ),

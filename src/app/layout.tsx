@@ -26,7 +26,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://crazydesconto.com.br";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://descontodatacrazy.com.br";
 const SITE_NAME = "CrazyDesconto — Parceiro Oficial DataCrazy";
 const TITLE = "Cupom DataCrazy PABLO100 — R$100 de Desconto/Mês no CRM com IA [2026]";
 const DESCRIPTION =

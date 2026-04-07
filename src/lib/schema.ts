@@ -12,7 +12,7 @@ import type {
   Article,
 } from "schema-dts";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://crazydesconto.com.br";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://descontodatacrazy.com.br";
 const SITE_NAME = "CrazyDesconto — Parceiro Oficial DataCrazy";
 const AFFILIATE_URL = "https://datacrazy.io/?via=IAPABLO";
 
