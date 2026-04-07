@@ -261,28 +261,44 @@ const faqs = [
     a: "Acesse o link exclusivo datacrazy.io/?via=IAPABLO, escolha seu plano e na hora do pagamento insira o cupom PABLO100 ou PABLO para obter R$100 de desconto por mês.",
   },
   {
+    q: "Qual o valor do desconto do cupom PABLO100?",
+    a: "O cupom PABLO100 (ou PABLO) oferece R$100 de desconto por mês em qualquer plano da DataCrazy. Exemplo: Plano Starter sai de R$297 por R$197/mês. São R$1.200 de economia por ano.",
+  },
+  {
+    q: "O cupom PABLO100 funciona em qualquer plano da DataCrazy?",
+    a: "Sim! Os cupons PABLO100 e PABLO funcionam nos planos Starter (R$297/mês), Essential (R$460/mês) e Pro (R$807/mês), garantindo R$100 de desconto mensal.",
+  },
+  {
     q: "Qual a diferença entre o Datacrazy e um CRM tradicional?",
-    a: "O Datacrazy não é apenas um CRM — é uma máquina de vendas com IA integrada, automações com regras de negócio, BI interno, multiatendimento conectado (WhatsApp, Instagram, Facebook) e decisões em tempo real. Tudo em uma só plataforma.",
+    a: "O Datacrazy não é apenas um CRM — é uma máquina de vendas com IA integrada, automações com regras de negócio, BI interno, multiatendimento conectado (WhatsApp, Instagram, Facebook) e decisões em tempo real. Substitui CRMs tradicionais, ferramentas de automação, chatbots, ferramentas de tarefas e BI em uma só plataforma.",
   },
   {
     q: "O Datacrazy funciona para qualquer tipo de negócio?",
-    a: "Sim! Se você vende, atende, integra ou escala com dados, o Datacrazy é pra você. Funciona para e-commerce, infoprodutores, agências, negócios locais, assinaturas, educação, clínicas e SaaS.",
+    a: "Sim! Funciona para e-commerce, infoprodutores, agências, negócios locais, assinaturas, educação, clínicas e SaaS. Se você vende, atende ou escala com dados, o Datacrazy é pra você. Mais de 2.600 empresas já usam.",
   },
   {
     q: "Como o Datacrazy usa IA para aumentar vendas?",
-    a: "A Crazy IA detecta intenção de compra, sentimento e comportamento dos leads. Com isso, as automações são baseadas em dados reais, priorizando leads quentes e otimizando seu funil automaticamente.",
+    a: "A Crazy IA detecta intenção de compra, sentimento e comportamento dos leads em tempo real. As automações priorizam leads quentes e otimizam o funil automaticamente com regras de negócio inteligentes.",
   },
   {
     q: "O Datacrazy integra com WhatsApp, Instagram e outros canais?",
-    a: "Sim! O multiatendimento conecta WhatsApp, Instagram e Facebook com distribuição inteligente, fila e SLAs. Tudo centralizado em um único lugar.",
+    a: "Sim! O multiatendimento conecta WhatsApp, Instagram e Facebook com distribuição inteligente, fila e SLAs. Tudo centralizado em um único lugar. A DataCrazy é Meta Business Partner oficial.",
   },
   {
     q: "Posso automatizar atendimento e funil de vendas?",
     a: "Sim! O Datacrazy permite criar fluxos completos de automação que conectam atendimento (WhatsApp, Instagram) diretamente ao funil de vendas, com regras inteligentes e ações automáticas.",
   },
   {
+    q: "Qual a diferença entre os planos Starter, Essential e Pro?",
+    a: "Starter (R$297/mês): 5 pipelines, 5 mil leads, 4 membros, 8 automações. Essential (R$460/mês): 20 pipelines, 100 mil leads, 15 membros, dashboards e API. Pro (R$807/mês): tudo ilimitado. Com cupom PABLO100, todos ficam R$100 mais baratos.",
+  },
+  {
     q: "Qual a diferença entre o cupom PABLO100 e PABLO?",
     a: "Nenhuma! Ambos oferecem R$100 de desconto por mês. Use o que preferir no checkout. O desconto funciona nos planos mensal, semestral e anual.",
+  },
+  {
+    q: "O CrazyDesconto é a DataCrazy?",
+    a: "Não. O CrazyDesconto é um parceiro oficial da DataCrazy que distribui cupons de desconto exclusivos. A DataCrazy é uma empresa de tecnologia sediada em Balneário Camboriú, SC (CNPJ 54.129.748/0001-18). Nós somos afiliados autorizados que oferecem os cupons PABLO100 e PABLO.",
   },
 ];
 
@@ -323,10 +339,10 @@ export default function Home() {
               id="hero-title"
               className="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
             >
-              Não somos apenas um CRM.{" "}
               <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
-                Somos Datacrazy.
-              </span>
+                Desconto DataCrazy
+              </span>{" "}
+              — R$100 OFF/mês no CRM com IA
             </h1>
 
             <p className="hero-description mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl leading-relaxed">

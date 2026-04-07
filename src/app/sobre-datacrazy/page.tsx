@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { articleSchema, aboutPageBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "O que é DataCrazy? CRM com IA para Vendas e Automação",
@@ -21,6 +23,7 @@ export const metadata: Metadata = {
 export default function SobreDataCrazy() {
   return (
     <>
+      <JsonLd data={[articleSchema(), aboutPageBreadcrumbSchema()]} />
       <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <a href="/" className="text-lg font-bold tracking-tight">

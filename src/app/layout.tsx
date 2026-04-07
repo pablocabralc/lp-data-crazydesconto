@@ -10,6 +10,7 @@ import {
   faqSchema,
   howToSchema,
   breadcrumbSchema,
+  itemListSchema,
 } from "@/lib/schema";
 import "./globals.css";
 
@@ -137,6 +138,7 @@ export default function RootLayout({
             softwareApplicationSchema(),
             faqSchema(),
             howToSchema(),
+            itemListSchema(),
             breadcrumbSchema(),
           ]}
         />

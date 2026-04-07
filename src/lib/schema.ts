@@ -5,11 +5,11 @@ import type {
   WebPage,
   FAQPage,
   BreadcrumbList,
-  Product,
   AggregateRating,
   SoftwareApplication,
   HowTo,
-  VideoObject,
+  ItemList,
+  Article,
 } from "schema-dts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://crazydesconto.com.br";
@@ -57,7 +57,6 @@ export function organizationSchema(): WithContext<Organization> {
         closes: "22:00",
       },
     },
-    // Known social channels can be added when available
     sameAs: [],
   };
 }
@@ -93,14 +92,6 @@ export function webSiteSchema(): WithContext<WebSite> {
       name: "CrazyDesconto",
       url: SITE_URL,
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    } as unknown as WebSite["potentialAction"],
   };
 }
 
@@ -315,10 +306,10 @@ export function faqSchema(): WithContext<FAQPage> {
       },
       {
         "@type": "Question",
-        name: "Qual a diferença entre o cupom PABLO100 e PABLO?",
+        name: "Posso automatizar atendimento e funil de vendas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nenhuma! Ambos os cupons oferecem o mesmo desconto de R$100 por mês. Use qualquer um dos dois no checkout da DataCrazy. O desconto funciona nos planos mensal, semestral e anual.",
+          text: "Sim! O Datacrazy permite criar fluxos completos de automação que conectam atendimento (WhatsApp, Instagram) diretamente ao funil de vendas, com regras inteligentes e ações automáticas.",
         },
       },
       {
@@ -327,6 +318,14 @@ export function faqSchema(): WithContext<FAQPage> {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Starter (R$297/mês): 5 pipelines, 5 mil leads, 4 membros, 8 automações. Essential (R$460/mês): 20 pipelines, 100 mil leads, 15 membros, dashboards e API. Pro (R$807/mês): tudo ilimitado. Com cupom PABLO100, todos ficam R$100 mais baratos.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Qual a diferença entre o cupom PABLO100 e PABLO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nenhuma! Ambos os cupons oferecem o mesmo desconto de R$100 por mês. Use qualquer um dos dois no checkout da DataCrazy. O desconto funciona nos planos mensal, semestral e anual.",
         },
       },
       {
@@ -379,6 +378,60 @@ export function howToSchema(): WithContext<HowTo> {
   };
 }
 
+export function itemListSchema(): WithContext<ItemList> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Planos DataCrazy com Cupom PABLO100",
+    description: "Comparação dos 3 planos DataCrazy com desconto de R$100/mês aplicado via cupom PABLO100 ou PABLO.",
+    numberOfItems: 3,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Plano Starter — R$197/mês com cupom",
+        url: AFFILIATE_URL,
+        item: {
+          "@type": "Offer",
+          name: "DataCrazy Starter",
+          price: "197",
+          priceCurrency: "BRL",
+          description: "5 pipelines, 5 mil leads, 4 membros, 8 automações, 3 conexões. De R$297 por R$197/mês.",
+          availability: "https://schema.org/InStock",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Plano Essential — R$360/mês com cupom (Melhor custo-benefício)",
+        url: AFFILIATE_URL,
+        item: {
+          "@type": "Offer",
+          name: "DataCrazy Essential",
+          price: "360",
+          priceCurrency: "BRL",
+          description: "20 pipelines, 100 mil leads, 15 membros, 20 automações, dashboards e API. De R$460 por R$360/mês.",
+          availability: "https://schema.org/InStock",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Plano Pro — R$707/mês com cupom (Mais vendido)",
+        url: AFFILIATE_URL,
+        item: {
+          "@type": "Offer",
+          name: "DataCrazy Pro",
+          price: "707",
+          priceCurrency: "BRL",
+          description: "Tudo ilimitado: pipelines, leads, membros, automações, conexões e API. De R$807 por R$707/mês.",
+          availability: "https://schema.org/InStock",
+        },
+      },
+    ],
+  };
+}
+
 export function breadcrumbSchema(): WithContext<BreadcrumbList> {
   return {
     "@context": "https://schema.org",
@@ -397,6 +450,62 @@ export function breadcrumbSchema(): WithContext<BreadcrumbList> {
         item: SITE_URL,
       },
     ],
+  };
+}
+
+export function aboutPageBreadcrumbSchema(): WithContext<BreadcrumbList> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "CrazyDesconto",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Sobre a DataCrazy",
+        item: `${SITE_URL}/sobre-datacrazy`,
+      },
+    ],
+  };
+}
+
+export function articleSchema(): WithContext<Article> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "O que é DataCrazy? CRM com IA para Vendas e Automação",
+    description:
+      "Conheça a DataCrazy: CRM com IA integrada, multiatendimento WhatsApp/Instagram, BI interno e automações. +2.600 empresas. Meta Business Partner.",
+    url: `${SITE_URL}/sobre-datacrazy`,
+    datePublished: "2026-04-07",
+    dateModified: new Date().toISOString().split("T")[0],
+    author: {
+      "@type": "Organization",
+      name: "CrazyDesconto",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "CrazyDesconto",
+      url: SITE_URL,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/sobre-datacrazy`,
+    },
+    about: {
+      "@type": "SoftwareApplication",
+      name: "DataCrazy CRM",
+      url: "https://datacrazy.io",
+      applicationCategory: "BusinessApplication",
+    },
+    inLanguage: "pt-BR",
+    keywords: "DataCrazy, CRM com IA, automação de vendas, multiatendimento WhatsApp, BI interno",
   };
 }
 
