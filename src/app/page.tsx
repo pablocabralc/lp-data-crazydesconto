@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AFFILIATE_URL = "https://datacrazy.io/?via=IAPABLO";
 
 function CouponBadge({ code }: { code: string }) {
@@ -346,6 +348,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-description mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl leading-relaxed">
+              Aproveite o melhor <strong className="text-foreground">desconto DataCrazy</strong> disponível:
               IA, automações com regras de negócio, BI interno, mensageria conectada e
               decisões em tempo real. Use o cupom{" "}
               <strong className="text-primary">PABLO100</strong> ou{" "}
@@ -364,8 +367,20 @@ export default function Home() {
               <CouponBadge code="PABLO" />
             </div>
 
+            {/* Hero image */}
+            <div className="mx-auto mt-12 max-w-3xl">
+              <Image
+                src="/hero-datacrazy-desconto.svg"
+                alt="Desconto DataCrazy — Dashboard do CRM com IA mostrando funil de vendas, métricas LTV e CAC, multiatendimento WhatsApp com automação inteligente, e cupom PABLO100 com R$100 de desconto por mês"
+                width={800}
+                height={400}
+                className="rounded-2xl border border-border/50"
+                priority
+              />
+            </div>
+
             {/* Stats */}
-            <div className="top-glow mt-16 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="top-glow mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {stats.map((stat) => (
                 <div
                   key={stat.label}
@@ -394,6 +409,10 @@ export default function Home() {
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
               IA, automações, dados, atendimento e jornadas integradas — tudo funcionando junto, no seu ritmo.
+              Com o desconto DataCrazy do cupom PABLO100, você acessa tudo isso por menos.{" "}
+              <a href="/sobre-datacrazy" className="text-accent underline hover:text-foreground">
+                Saiba mais sobre a plataforma →
+              </a>
             </p>
 
             <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -443,8 +462,17 @@ export default function Home() {
               ))}
             </div>
 
+            <div className="mx-auto mt-10 max-w-xl">
+              <Image
+                src="/datacrazy-vs-crm.svg"
+                alt="Comparação DataCrazy vs outros CRMs — DataCrazy unifica CRM, IA, automação, BI e multiatendimento WhatsApp em uma só plataforma com desconto PABLO100"
+                width={600}
+                height={200}
+                className="rounded-xl"
+              />
+            </div>
+
             <div className="mt-8 flex flex-col items-center gap-3">
-              <div className="text-2xl">↓</div>
               <span className="glow-primary inline-flex items-center gap-2 rounded-full border-2 border-primary/40 bg-primary/10 px-8 py-3 text-lg font-bold text-primary">
                 ✓ Tudo isso é Datacrazy
               </span>
@@ -466,7 +494,7 @@ export default function Home() {
               <span className="text-primary">R$100 OFF</span>/mês
             </h2>
             <p className="mt-3 text-center text-muted-foreground">
-              Tudo que você precisa pra vender com precisão, escala e estrutura.
+              Tudo que você precisa pra vender com precisão, escala e estrutura — agora com desconto DataCrazy exclusivo.
             </p>
 
             <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -624,7 +652,10 @@ export default function Home() {
               <span className="text-accent">De lojas físicas a consultórios.</span>
             </h2>
             <p className="mt-3 text-center text-muted-foreground">
-              Se você vende, atende, integra ou escala com dados, o Datacrazy é pra você.
+              Se você vende, atende, integra ou escala com dados, o Datacrazy é pra você.{" "}
+              <a href="/sobre-datacrazy" className="text-accent underline hover:text-foreground">
+                Veja tudo que a plataforma oferece →
+              </a>
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -647,7 +678,7 @@ export default function Home() {
               id="how-to-title"
               className="text-center text-3xl font-bold tracking-tight sm:text-4xl"
             >
-              Ative seu desconto em <span className="text-primary">3 passos</span>
+              Ative seu desconto DataCrazy em <span className="text-primary">3 passos</span>
             </h2>
 
             <ol className="mt-12 grid gap-6 sm:grid-cols-3">
@@ -784,7 +815,10 @@ export default function Home() {
             <p className="mt-5 text-lg text-muted-foreground">
               CRM com IA, multiatendimento, automações e BI — com{" "}
               <strong className="text-foreground">R$100 de desconto todo mês</strong>.
-              Mais de 2.600 empresas já usam. Falta a sua.
+              Mais de 2.600 empresas já usam o desconto DataCrazy para escalar. Falta a sua.{" "}
+              <a href="/sobre-datacrazy" className="text-accent underline hover:text-foreground">
+                Conheça a plataforma →
+              </a>
             </p>
 
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

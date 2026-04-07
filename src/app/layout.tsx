@@ -104,9 +104,6 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
-  other: {
-    "google-site-verification": "",
-  },
 };
 
 export const viewport: Viewport = {
