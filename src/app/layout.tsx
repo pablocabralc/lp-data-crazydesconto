@@ -3,10 +3,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
 import {
   organizationSchema,
+  affiliateOrganizationSchema,
   webSiteSchema,
   webPageSchema,
-  productSchema,
+  softwareApplicationSchema,
   faqSchema,
+  howToSchema,
   breadcrumbSchema,
 } from "@/lib/schema";
 import "./globals.css";
@@ -24,10 +26,10 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://crazydesconto.com.br";
-const SITE_NAME = "DataCrazy Desconto";
-const TITLE = "Cupom DataCrazy PABLO100 — R$100 de Desconto por Mês no CRM com IA [2026]";
+const SITE_NAME = "CrazyDesconto — Parceiro Oficial DataCrazy";
+const TITLE = "Cupom DataCrazy PABLO100 — R$100 de Desconto/Mês no CRM com IA [2026]";
 const DESCRIPTION =
-  "Use o cupom PABLO100 ou PABLO e ganhe R$100 OFF/mês na DataCrazy. CRM com IA integrada, multiatendimento WhatsApp, automações e BI interno. Planos a partir de R$197/mês com cupom. Economize R$1.200/ano.";
+  "Parceiro oficial DataCrazy. Cupom PABLO100 ou PABLO: R$100 OFF/mês no CRM com IA, multiatendimento WhatsApp, automações e BI interno. Starter R$197/mês, Essential R$360/mês, Pro R$707/mês. Economize R$1.200/ano.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -48,11 +50,18 @@ export const metadata: Metadata = {
     "datacrazy preço",
     "datacrazy planos",
     "cupom desconto CRM",
-    "multiatendimento whatsapp",
-    "automação de vendas",
+    "datacrazy review",
+    "datacrazy é bom",
+    "datacrazy vale a pena",
+    "multiatendimento whatsapp CRM",
+    "automação de vendas CRM",
+    "CRM para e-commerce",
+    "CRM para agência",
+    "CRM com inteligência artificial",
+    "desconto no datacrazy",
   ],
-  authors: [{ name: "Pablo" }],
-  creator: "Pablo",
+  authors: [{ name: "CrazyDesconto" }],
+  creator: "CrazyDesconto",
   publisher: SITE_NAME,
   robots: {
     index: true,
@@ -77,7 +86,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DataCrazy — R$100 de desconto por mês com cupom PABLO100. CRM com IA, automação e multiatendimento.",
+        alt: "Cupom DataCrazy PABLO100 — R$100 de desconto por mês no CRM com IA. Parceiro oficial.",
       },
     ],
   },
@@ -94,10 +103,13 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+  other: {
+    "google-site-verification": "",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0f",
+  themeColor: "#070b18",
   width: "device-width",
   initialScale: 1,
 };
@@ -119,10 +131,12 @@ export default function RootLayout({
         <JsonLd
           data={[
             organizationSchema(),
+            affiliateOrganizationSchema(),
             webSiteSchema(),
             webPageSchema(),
-            productSchema(),
+            softwareApplicationSchema(),
             faqSchema(),
+            howToSchema(),
             breadcrumbSchema(),
           ]}
         />
