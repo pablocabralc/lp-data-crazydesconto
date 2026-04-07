@@ -364,15 +364,15 @@ export function howToSchema(): WithContext<HowTo> {
       {
         "@type": "HowToStep",
         position: 2,
-        name: "Escolha seu plano",
-        text: "Selecione entre Starter (R$297/mês), Essential (R$460/mês) ou Pro (R$807/mês). O cupom funciona em todos, no mensal, semestral ou anual.",
+        name: "Crie sua conta na DataCrazy",
+        text: "Registre-se na plataforma e escolha seu plano: Starter (R$297/mês), Essential (R$460/mês) ou Pro (R$807/mês). O cupom funciona em todos, no mensal, semestral ou anual.",
         url: "https://datacrazy.io/planos",
       },
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Insira o cupom PABLO100 ou PABLO",
-        text: "No checkout, digite PABLO100 ou PABLO no campo de cupom. O desconto de R$100 será aplicado automaticamente todo mês.",
+        name: "Aplique o cupom no checkout",
+        text: "Na tela de pagamento, insira PABLO100 ou PABLO no campo de cupom. O desconto de R$100 será aplicado automaticamente todo mês.",
       },
     ],
   };

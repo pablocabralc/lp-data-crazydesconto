@@ -260,7 +260,7 @@ const segments = [
 const faqs = [
   {
     q: "Como usar o cupom de desconto DataCrazy?",
-    a: "Acesse o link exclusivo datacrazy.io/?via=IAPABLO, escolha seu plano e na hora do pagamento insira o cupom PABLO100 ou PABLO para obter R$100 de desconto por mês.",
+    a: "1) Acesse o link exclusivo datacrazy.io/?via=IAPABLO. 2) Crie sua conta e escolha seu plano. 3) No checkout, insira o cupom PABLO100 ou PABLO no campo de cupom para obter R$100 de desconto por mês.",
   },
   {
     q: "Qual o valor do desconto do cupom PABLO100?",
@@ -687,19 +687,19 @@ export default function Home() {
                   step: "1",
                   title: "Acesse o link exclusivo",
                   description:
-                    "Clique no botão para ir à DataCrazy com o link de parceiro já aplicado.",
+                    "Clique no botão abaixo para ir à DataCrazy com o link de parceiro já aplicado automaticamente.",
                 },
                 {
                   step: "2",
-                  title: "Escolha seu plano",
+                  title: "Crie sua conta na DataCrazy",
                   description:
-                    "Starter, Essential ou Pro — mensal, semestral ou anual. O cupom funciona em todos.",
+                    "Registre-se na plataforma e escolha seu plano: Starter, Essential ou Pro — mensal, semestral ou anual.",
                 },
                 {
                   step: "3",
-                  title: "Insira PABLO100 ou PABLO",
+                  title: "Aplique o cupom no checkout",
                   description:
-                    "No checkout, digite o cupom e pronto: R$100 de desconto aplicado todo mês.",
+                    "Na tela de pagamento, insira PABLO100 ou PABLO no campo de cupom. R$100 de desconto aplicado todo mês, pronto!",
                 },
               ].map((item) => (
                 <li
