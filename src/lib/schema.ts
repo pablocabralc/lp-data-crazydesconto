@@ -12,6 +12,7 @@ import type {
   Article,
   Blog,
   CollectionPage,
+  VideoObject,
 } from "schema-dts";
 import type { BlogPost, BlogFaq } from "./blog-posts";
 
@@ -638,6 +639,69 @@ export function blogPostFaqSchema(faqs: BlogFaq[]): WithContext<FAQPage> {
       },
     })),
   };
+}
+
+export function videoObjectSchema(): WithContext<VideoObject>[] {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "Data Crazy VALE A PENA? Teste Completo + Prós e Contras Revelados",
+      description:
+        "Review completo do DataCrazy CRM: teste prático com prós e contras revelados. Descubra se o DataCrazy vale a pena para automação de vendas, multiatendimento WhatsApp, IA integrada e gestão de leads. Análise honesta por Pablo Cabral.",
+      thumbnailUrl: "https://i.ytimg.com/vi/wxvD6zeGJAY/maxresdefault.jpg",
+      uploadDate: "2026-03-15",
+      contentUrl: "https://www.youtube.com/watch?v=wxvD6zeGJAY",
+      embedUrl: "https://www.youtube.com/embed/wxvD6zeGJAY",
+      duration: "PT15M",
+      interactionStatistic: {
+        "@type": "InteractionCounter",
+        interactionType: { "@type": "WatchAction" },
+        userInteractionCount: 5000,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Pablo Cabral - Automações e Google Ads",
+        url: "https://www.youtube.com/@PabloCabral",
+      },
+      inLanguage: "pt-BR",
+      about: {
+        "@type": "SoftwareApplication",
+        name: "DataCrazy CRM",
+        url: "https://datacrazy.io",
+        applicationCategory: "BusinessApplication",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "DataCrazy CRM: Gestão de Clientes Inteligente (com SUPER DESCONTO)",
+      description:
+        "Conheça o DataCrazy CRM e como ele transforma a gestão de clientes com inteligência artificial. Veja como funciona o multiatendimento, automações, BI interno e aproveite o super desconto exclusivo com cupom PABLO100.",
+      thumbnailUrl: "https://i.ytimg.com/vi/Emgdf4-Cx7E/maxresdefault.jpg",
+      uploadDate: "2026-04-01",
+      contentUrl: "https://www.youtube.com/watch?v=Emgdf4-Cx7E",
+      embedUrl: "https://www.youtube.com/embed/Emgdf4-Cx7E",
+      duration: "PT10M",
+      interactionStatistic: {
+        "@type": "InteractionCounter",
+        interactionType: { "@type": "WatchAction" },
+        userInteractionCount: 3000,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Pablo Cabral - Automações e Google Ads",
+        url: "https://www.youtube.com/@PabloCabral",
+      },
+      inLanguage: "pt-BR",
+      about: {
+        "@type": "SoftwareApplication",
+        name: "DataCrazy CRM",
+        url: "https://datacrazy.io",
+        applicationCategory: "BusinessApplication",
+      },
+    },
+  ];
 }
 
 export function webPageSchema(): WithContext<WebPage> {

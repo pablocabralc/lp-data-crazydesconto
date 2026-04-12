@@ -722,6 +722,81 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ===== VÍDEOS ===== */}
+        <section className="gradient-section border-t border-border/50 py-20" aria-labelledby="videos-title">
+          <div className="mx-auto max-w-6xl px-4">
+            <p className="text-center text-sm font-medium uppercase tracking-widest text-accent">
+              Veja na prática
+            </p>
+            <h2
+              id="videos-title"
+              className="mt-3 text-center text-3xl font-bold tracking-tight sm:text-4xl"
+            >
+              Conheça o DataCrazy{" "}
+              <span className="text-accent">por dentro</span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+              Assista ao review completo e veja como o CRM com IA funciona na prática — com prós, contras e desconto exclusivo.
+            </p>
+
+            <div className="mt-14 grid gap-6 lg:grid-cols-2">
+              {/* Video 1 */}
+              <div className="card-hover overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur-sm">
+                <div className="relative aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/wxvD6zeGJAY"
+                    title="Data Crazy VALE A PENA? Teste Completo + Prós e Contras Revelados"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold">
+                    Data Crazy VALE A PENA? Teste Completo + Prós e Contras
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Review completo com teste prático: descubra se o DataCrazy vale a pena para automação de vendas, multiatendimento e gestão de leads com IA.
+                  </p>
+                  <p className="mt-3 text-xs text-muted-foreground">
+                    Por <span className="font-medium text-accent">Pablo Cabral</span> — Automações e Google Ads
+                  </p>
+                </div>
+              </div>
+
+              {/* Video 2 */}
+              <div className="card-hover overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur-sm">
+                <div className="relative aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/Emgdf4-Cx7E"
+                    title="DataCrazy CRM: Gestão de Clientes Inteligente (com SUPER DESCONTO)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold">
+                    DataCrazy CRM: Gestão de Clientes Inteligente
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Veja como o DataCrazy transforma a gestão de clientes com IA integrada, automações inteligentes e multiatendimento — com desconto exclusivo PABLO100.
+                  </p>
+                  <p className="mt-3 text-xs text-muted-foreground">
+                    Por <span className="font-medium text-accent">Pablo Cabral</span> — Automações e Google Ads
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <CtaButton>Quero Meu Desconto de R$100/mês →</CtaButton>
+            </div>
+          </div>
+        </section>
+
         {/* ===== AVALIAÇÕES ===== */}
         <section className="gradient-section border-t border-border/50 py-20" aria-labelledby="reviews-title">
           <div className="mx-auto max-w-6xl px-4">

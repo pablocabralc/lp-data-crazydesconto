@@ -11,6 +11,7 @@ import {
   howToSchema,
   breadcrumbSchema,
   itemListSchema,
+  videoObjectSchema,
 } from "@/lib/schema";
 import "./globals.css";
 
@@ -125,6 +126,7 @@ export default function RootLayout({
             howToSchema(),
             itemListSchema(),
             breadcrumbSchema(),
+            ...videoObjectSchema(),
           ]}
         />
       </head>
