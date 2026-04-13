@@ -36,15 +36,19 @@ export function organizationSchema(): WithContext<Organization> {
     address: [
       {
         "@type": "PostalAddress",
+        streetAddress: "Centro",
         addressLocality: "Balneário Camboriú",
         addressRegion: "SC",
+        postalCode: "88330-000",
         addressCountry: "BR",
         description: "Sede principal",
       },
       {
         "@type": "PostalAddress",
+        streetAddress: "Centro",
         addressLocality: "Caxias do Sul",
         addressRegion: "RS",
+        postalCode: "95010-000",
         addressCountry: "BR",
         description: "Engenharia",
       },
@@ -103,6 +107,7 @@ export function softwareApplicationSchema(): WithContext<SoftwareApplication> {
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": `${SITE_URL}/#datacrazy-crm`,
     name: "DataCrazy CRM",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
@@ -394,7 +399,6 @@ export function itemListSchema(): WithContext<ItemList> {
         "@type": "ListItem",
         position: 1,
         name: "Plano Starter — R$197/mês com cupom",
-        url: AFFILIATE_URL,
         item: {
           "@type": "Offer",
           name: "DataCrazy Starter",
@@ -402,13 +406,13 @@ export function itemListSchema(): WithContext<ItemList> {
           priceCurrency: "BRL",
           description: "5 pipelines, 5 mil leads, 4 membros, 8 automações, 3 conexões. De R$297 por R$197/mês.",
           availability: "https://schema.org/InStock",
+          url: AFFILIATE_URL,
         },
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Plano Essential — R$360/mês com cupom (Melhor custo-benefício)",
-        url: AFFILIATE_URL,
         item: {
           "@type": "Offer",
           name: "DataCrazy Essential",
@@ -416,13 +420,13 @@ export function itemListSchema(): WithContext<ItemList> {
           priceCurrency: "BRL",
           description: "20 pipelines, 100 mil leads, 15 membros, 20 automações, dashboards e API. De R$460 por R$360/mês.",
           availability: "https://schema.org/InStock",
+          url: AFFILIATE_URL,
         },
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Plano Pro — R$707/mês com cupom (Mais vendido)",
-        url: AFFILIATE_URL,
         item: {
           "@type": "Offer",
           name: "DataCrazy Pro",
@@ -430,6 +434,7 @@ export function itemListSchema(): WithContext<ItemList> {
           priceCurrency: "BRL",
           description: "Tudo ilimitado: pipelines, leads, membros, automações, conexões e API. De R$807 por R$707/mês.",
           availability: "https://schema.org/InStock",
+          url: AFFILIATE_URL,
         },
       },
     ],
@@ -503,10 +508,7 @@ export function articleSchema(): WithContext<Article> {
       "@id": `${SITE_URL}/sobre-datacrazy`,
     },
     about: {
-      "@type": "SoftwareApplication",
-      name: "DataCrazy CRM",
-      url: "https://datacrazy.io",
-      applicationCategory: "BusinessApplication",
+      "@id": `${SITE_URL}/#datacrazy-crm`,
     },
     inLanguage: "pt-BR",
     keywords: "DataCrazy, CRM com IA, automação de vendas, multiatendimento WhatsApp, BI interno",
@@ -650,7 +652,7 @@ export function videoObjectSchema(): WithContext<VideoObject>[] {
       description:
         "Review completo do DataCrazy CRM: teste prático com prós e contras revelados. Descubra se o DataCrazy vale a pena para automação de vendas, multiatendimento WhatsApp, IA integrada e gestão de leads. Análise honesta por Pablo Cabral.",
       thumbnailUrl: "https://i.ytimg.com/vi/wxvD6zeGJAY/maxresdefault.jpg",
-      uploadDate: "2026-03-15",
+      uploadDate: "2026-03-15T10:00:00-03:00",
       contentUrl: "https://www.youtube.com/watch?v=wxvD6zeGJAY",
       embedUrl: "https://www.youtube.com/embed/wxvD6zeGJAY",
       duration: "PT15M",
@@ -666,10 +668,7 @@ export function videoObjectSchema(): WithContext<VideoObject>[] {
       },
       inLanguage: "pt-BR",
       about: {
-        "@type": "SoftwareApplication",
-        name: "DataCrazy CRM",
-        url: "https://datacrazy.io",
-        applicationCategory: "BusinessApplication",
+        "@id": `${SITE_URL}/#datacrazy-crm`,
       },
     },
     {
@@ -679,7 +678,7 @@ export function videoObjectSchema(): WithContext<VideoObject>[] {
       description:
         "Conheça o DataCrazy CRM e como ele transforma a gestão de clientes com inteligência artificial. Veja como funciona o multiatendimento, automações, BI interno e aproveite o super desconto exclusivo com cupom PABLO100.",
       thumbnailUrl: "https://i.ytimg.com/vi/Emgdf4-Cx7E/maxresdefault.jpg",
-      uploadDate: "2026-04-01",
+      uploadDate: "2026-04-01T10:00:00-03:00",
       contentUrl: "https://www.youtube.com/watch?v=Emgdf4-Cx7E",
       embedUrl: "https://www.youtube.com/embed/Emgdf4-Cx7E",
       duration: "PT10M",
@@ -695,10 +694,7 @@ export function videoObjectSchema(): WithContext<VideoObject>[] {
       },
       inLanguage: "pt-BR",
       about: {
-        "@type": "SoftwareApplication",
-        name: "DataCrazy CRM",
-        url: "https://datacrazy.io",
-        applicationCategory: "BusinessApplication",
+        "@id": `${SITE_URL}/#datacrazy-crm`,
       },
     },
   ];
@@ -721,10 +717,7 @@ export function webPageSchema(): WithContext<WebPage> {
     datePublished: "2026-04-07",
     dateModified: new Date().toISOString().split("T")[0],
     about: {
-      "@type": "SoftwareApplication",
-      name: "DataCrazy CRM",
-      url: "https://datacrazy.io",
-      applicationCategory: "BusinessApplication",
+      "@id": `${SITE_URL}/#datacrazy-crm`,
     },
     mentions: [
       {
@@ -743,9 +736,7 @@ export function webPageSchema(): WithContext<WebPage> {
       cssSelector: ["h1", ".hero-description", ".faq-section"],
     },
     mainEntity: {
-      "@type": "SoftwareApplication",
-      name: "DataCrazy CRM",
-      url: "https://datacrazy.io",
+      "@id": `${SITE_URL}/#datacrazy-crm`,
     },
   };
 }
